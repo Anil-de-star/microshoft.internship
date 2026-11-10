@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Internship Completion | Congratulations</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #071d17, #123d30, #071d17);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+.card {
+    max-width: 650px;
+    width: 100%;
+    padding: 40px 25px;
+    text-align: center;
+    border: 2px solid #d6ad55;
+    border-radius: 25px;
+    background: rgba(255,255,255,0.06);
+    box-shadow: 0 0 35px rgba(255,190,60,0.2);
+    position: relative;
+    z-index: 2;
+}
+
+.trophy {
+    font-size: 65px;
+    margin-bottom: 15px;
+    animation: bounce 2s infinite;
+}
+
+h1 {
+    color: #ffd778;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.name {
+    font-size: 25px;
+    color: #fff0bd;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-size: 21px;
+    color: #ffdc83;
+    margin-bottom: 20px;
+}
+
+.message {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #e7eee9;
+}
+
+.achievement {
+    margin: 25px 0;
+    padding: 18px;
+    border: 1px solid #d6ad55;
+    border-radius: 15px;
+    color: #ffdc83;
+    font-size: 19px;
+}
+
+.footer {
+    margin-top: 25px;
+    color: #ffd778;
+    font-size: 17px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 30px;
+    background: #d6ad55;
+    color: #10251c;
+    font-weight: bold;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+
+.confetti {
+    position: fixed;
+    top: -15px;
+    width: 9px;
+    height: 13px;
+    animation: fall linear infinite;
+    z-index: 1;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(110vh) rotate(720deg);
+    }
+}
+
+@media(max-width: 480px) {
+    h1 { font-size: 27px; }
+    .name { font-size: 20px; }
+    .card { padding: 30px 18px; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="trophy">🏆</div>
+
+    <h1>🎉 CONGRATULATIONS 🎉</h1>
+
+    <p class="subtitle">Internship Successfully Completed!</p>
+
+    <div class="name">
+        TARIGOPPLA ANIL KUMAR
+    </div>
+
+    <p class="message">
+        We congratulate you on successfully completing
+        your internship journey!
+
+        <br><br>
+
+        Your dedication, commitment, enthusiasm and
+        continuous efforts have brought you to this
+        wonderful milestone.
+
+        <br><br>
+
+        May this achievement open new doors to
+        opportunities and success in your professional
+        career. Continue learning, exploring and
+        achieving great things.
+    </p>
+
+    <div class="achievement">
+        ✨ ACHIEVEMENT UNLOCKED ✨
+        <br><br>
+        🌟 Internship Completion 🌟
+    </div>
+
+    <div class="badge">
+        ✓ SUCCESSFULLY COMPLETED
+    </div>
+
+    <div class="footer">
+        🎓 Best Wishes for Your Future! 🚀
+        <br><br>
+        Keep Learning • Keep Growing • Keep Shining
+    </div>
+
+</div>
+
+<script>
+const colors = ["#ffd700", "#ffffff", "#00e5a8", "#ff8c42"];
+
+for (let i = 0; i < 70; i++) {
+    const confetti = document.createElement("div");
+    confetti.className = "confetti";
+
+    confetti.style.left = Math.random() * 100 + "vw";
+    confetti.style.background =
+        colors[Math.floor(Math.random() * colors.length)];
+
+    confetti.style.animationDuration =
+        (3 + Math.random() * 5) + "s";
+
+    confetti.style.animationDelay =
+        Math.random() * 5 + "s";
+
+    document.body.appendChild(confetti);
+}
+</script>
+
+</body>
+</html>
